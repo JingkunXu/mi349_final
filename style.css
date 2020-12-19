@@ -1,0 +1,135 @@
+html{
+    background-color: lightsteelblue;
+    background-size: cover;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:20px;
+    padding: 20px;
+}
+
+nav{
+    width: 90%;
+    background-color: thistle;
+    overflow: auto;
+}
+
+nav a{
+    float: left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: wheat;
+}
+
+h1 a{
+    text-decoration: none;
+    color: white;
+}
+
+h1 a:hover{
+    color: wheat;
+}
+
+section{
+    margin-bottom: 2em;
+    color: black;
+}
+
+section p{
+    padding: 20px;
+    text-align: justify;
+}
+
+button{
+    padding: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-size: large;
+}
+
+label{
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+
+button:hover{
+    color: wheat;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: darkcyan;
+}
+
+ul a:hover{
+    color: darkgoldenrod;
+}
+
+.float{
+    margin: 60px;
+    padding: 60px;
+    float:right;
+    position: relative;
+    width: 50%;
+}
+
+p a{
+    float: left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+p a:hover{
+    color: wheat;
+}
+
+.float:hover .overlay{
+    opacity: 1;
+}
+
+.float:hover img{
+    opacity: 0.3;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.overlay{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.overlay-text{
+    color: white;
+    background-color: thistle;
+    padding: 16px 32px;
+}
